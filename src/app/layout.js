@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "REZENHA",
+  title: "Rezenhar",
   description: "Jogo da rezenha",
 };
 

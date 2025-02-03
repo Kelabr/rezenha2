@@ -57,14 +57,6 @@ export default function CardGame({data}){
                 }}
             />
 
-            <Script 
-                id="my-custom-script"
-                strategy="afterInteractive" // Carrega o script após a interação com a página
-                dangerouslySetInnerHTML={{
-                __html: `(function(d,z,s){s.src='https://'+d+'/401/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('gizokraijaw.net',8892692,document.createElement('script'))`
-                }}
-            />
-
         
             <div className="h-56 bg-white w-full rounded-xl px-3 pt-5 flex flex-col box-border max-w-96">
                 <div className=" flex justify-center">

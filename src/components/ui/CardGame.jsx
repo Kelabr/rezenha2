@@ -44,7 +44,7 @@ export default function CardGame({data}){
 
 
     return(
-        <div className="h-56 bg-white w-full rounded-xl px-3 pt-5 flex flex-col box-border">
+        <div className="h-56 bg-white w-full rounded-xl px-3 pt-5 flex flex-col box-border max-w-96">
             <div className=" flex justify-center">
                 <Image
                 src='/cardGame/logoCardGame.svg'

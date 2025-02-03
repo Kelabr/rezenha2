@@ -20,8 +20,8 @@ export default function Games(){
                 <section className="flex justify-center">
                     <div className="max-w-[450px] w-full">
                         <Card name='Galera' color='orange-500' destino='/galera'/> 
-                        <Card name='Hot' color='red-500'/>
-                        <Card name='F1' color='green-500'/>
+                        <Card name='Hot' color='red-500' destino='#'/>
+                        <Card name='F1' color='green-500' destino='#'/>
                     </div>
                 </section>
             </div>

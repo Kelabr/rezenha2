@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const COLOR = {
     "orange-500": "bg-orange-500",
-    "red-500": "bg-red-500",
-    "green-500": "bg-green-500"
+    "red-500": "bg-red-500 opacity-50",
+    "green-500": "bg-green-500 opacity-50"
 }
 
 

@@ -56,6 +56,14 @@ export default function CardGame({data}){
                     __html: `(function(d,z,s){s.src='https://'+d+'/401/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('groleegni.net',8892524,document.createElement('script'))`
                 }}
             />
+
+            <Script 
+                id="monetag-script" 
+                strategy="afterInteractive" 
+                dangerouslySetInnerHTML={{
+                    __html: `(function(d,z,s){s.src='https://'+d+'/400/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('vemtoutcheeg.com',8892599,document.createElement('script'))`
+                }}
+            />
         
             <div className="h-56 bg-white w-full rounded-xl px-3 pt-5 flex flex-col box-border max-w-96">
                 <div className=" flex justify-center">

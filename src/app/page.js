@@ -25,10 +25,10 @@ export default function Home() {
             <Link href='/games' className=""><button className="bg-primary text-white w-full p-2 font-medium rounded-xl text-xl">Jogar</button></Link>
           </div>
 
-          {/* <div className="mt-20 flex flex-col items-center">
-            <Link href='#' className="text-[14px] font-bold underline">Regras do jogo</Link>
-            <Link href='#' className="text-[14px] font-bold underline">@ dos jogadores</Link>
-          </div> */}
+          <div className="mt-20 flex flex-col items-center">
+            <Link href='/regras' className="text-[14px] font-bold underline">Regras do jogo</Link>
+            {/* <Link href='#' className="text-[14px] font-bold underline">@ dos jogadores</Link> */}
+          </div>
           
         </div>
 

@@ -90,15 +90,16 @@ export default function CardGame({data}){
                         <button>Voltar</button>
                     </Link>
                     ):(
-                        <Image
+                    <Image
+                        className="cursor-pointer"
                         onClick={nextQuestion}
-                    src='/cardGame/setaProximo.svg'
-                    height={30}
-                    width={30}
-                    alt="seta"
-                    >
+                        src='/cardGame/setaProximo.svg'
+                        height={30}
+                        width={30}
+                        alt="seta"
+                        >
 
-                    </Image>
+                        </Image>
                     )
                 }
                     

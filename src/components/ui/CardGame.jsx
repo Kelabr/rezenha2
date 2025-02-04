@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useState } from "react"
 import Script from "next/script"
 
 
@@ -14,6 +14,7 @@ export default function CardGame({data}){
     const [indice, setIndice] = useState(0)
     const [rodada, setRodada] = useState(0)
     const [finish, setFinish] = useState(false)
+    const [perguntasRestantes, setPerguntasRestantes] = useState([...data])
 
 
 
@@ -29,17 +30,27 @@ export default function CardGame({data}){
 
     function nextQuestion(){
 
-        const limit = data.length
+        if(perguntasRestantes.length === 0){ //Alteração para não repetir cartas durante o jogo
+            perguntasRestantes = [...data]
+        }
 
-        let indexRamdom = 0
+        const indexRamdom = Math.floor(Math.random * perguntasRestantes.length)
+        const proximaPergunta = perguntasRestantes.splice(indexRamdom, 1)[0]
 
-        do {
-            indexRamdom = Math.floor(Math.random() * Number(limit))
-        }while(indexRamdom === indice)
+        setIndice(data.indexOf(proximaPergunta))
+        setRodada((value) => value + 1)
 
-        setIndice(indexRamdom)
+        // const limit = data.length
 
-        setRodada((value) => value +1)
+        // let indexRamdom = 0
+
+        // do {
+        //     indexRamdom = Math.floor(Math.random() * Number(limit))
+        // }while(indexRamdom === indice)
+
+        // setIndice(indexRamdom)
+
+        // setRodada((value) => value +1)
 
     }
 
